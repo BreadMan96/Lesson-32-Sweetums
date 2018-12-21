@@ -9,6 +9,13 @@ set :database, "sqlite3:sweetums.db"
 class Pie < ActiveRecord::Base
 end
 
+class AddPie < ActiveRecord::Base
+end
+
+before do
+	@pie = Pie.all 
+end
+
 get '/' do
 	erb :index
 end
