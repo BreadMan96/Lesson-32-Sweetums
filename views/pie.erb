@@ -1,1 +1,15 @@
-<h1 align="center"> <b> Торты тут будут </b> </h1>
+<h1 align="center"> <b> Самые вкусные торты смотри внизу! </b> </h1>
+
+<br/>
+
+<div class="row">
+	<% @pie.each do |p| %>
+		<div class="col-md-4">
+			<ul align="center" class="list-group">
+			  <li class="list-group-item"><img src="<%= p.path_to_image %>" width="200" height="150"></li>
+			  <li class="list-group-item"> <h5><b><%= p.title %></b></h5> <br/> <%= p.description %> </li>
+			  <li class="list-group-item"> <b><%= p.price %></b> руб. </li>
+			</ul>
+		</div>
+	<% end %>
+</div>

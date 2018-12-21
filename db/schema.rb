@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_21_101430) do
+ActiveRecord::Schema.define(version: 2018_12_21_162049) do
+
+  create_table "cakes", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.decimal "price"
+    t.decimal "size"
+    t.boolean "is_best_offer"
+    t.boolean "is_sugar_free"
+    t.string "path_to_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cookies", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.decimal "price"
+    t.decimal "size"
+    t.boolean "is_best_offer"
+    t.boolean "is_sugar_free"
+    t.string "path_to_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "pies", force: :cascade do |t|
     t.string "title"

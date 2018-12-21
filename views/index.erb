@@ -14,3 +14,31 @@
 		</div>
 	<% end %>
 </div>
+
+<br/>
+
+<div class="row">
+	<% @cake.each do |c| %>
+		<div class="col-md-4">
+			<ul align="center" class="list-group">
+			  <li class="list-group-item"><img src="<%= c.path_to_image %>" width="200" height="150"></li>
+			  <li class="list-group-item"> <h5><b><%= c.title %></b></h5> <br/> <%= c.description %> </li>
+			  <li class="list-group-item"> <b><%= c.price %></b> руб. </li>
+			</ul>
+		</div>
+	<% end %>
+</div>
+
+<br/>
+
+<div class="row">
+	<% @cookie.each do |cs| %>
+		<div class="col-md-4">
+			<ul align="center" class="list-group">
+			  <li class="list-group-item"><img src="<%= cs.path_to_image %>" width="200" height="150"></li>
+			  <li class="list-group-item"> <h5><b><%= cs.title %></b></h5> <br/> <%= cs.description %> </li>
+			  <li class="list-group-item"> <b><%= cs.price %></b> руб. </li>
+			</ul>
+		</div>
+	<% end %>
+</div>

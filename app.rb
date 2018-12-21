@@ -12,8 +12,22 @@ end
 class AddPie < ActiveRecord::Base
 end
 
+class Cake < ActiveRecord::Base
+end
+
+class AddCake < ActiveRecord::Base
+end
+
+class Cookie < ActiveRecord::Base
+end
+
+class AddCookie < ActiveRecord::Base
+end
+
 before do
-	@pie = Pie.all 
+	@pie = Pie.all
+	@cake = Cake.all 
+	@cookie = Cookie.all
 end
 
 get '/' do
