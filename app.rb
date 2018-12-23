@@ -53,3 +53,7 @@ end
 get '/feedback' do
 	erb :feedback
 end
+
+get '/admin_test' do
+	erb :admin_test
+end

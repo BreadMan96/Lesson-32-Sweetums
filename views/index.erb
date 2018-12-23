@@ -10,6 +10,7 @@
 			  <li class="list-group-item"><img src="<%= p.path_to_image %>" width="200" height="150"></li>
 			  <li class="list-group-item"> <h5><b><%= p.title %></b></h5> <br/> <%= p.description %> </li>
 			  <li class="list-group-item"> <b><%= p.price %></b> руб. </li>
+			  <button class="btn btn-sm btn-success" onclick="add_pie_box(<%= p.id %>)">Добавить в корзину</button>
 			</ul>
 		</div>
 	<% end %>
