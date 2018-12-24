@@ -46,8 +46,11 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Корзина <span class="sr-only">(current)</span></a>
+            <li>
+              <form action="/cart" method="post">
+              <input id="orders_input" name="orders" type="hidden" />
+              <input id="orders_button" type="submit" class="btn btn-primary btn-lg" value="Корзина" />
+              </form>
             </li>
           </ul>
         </div>

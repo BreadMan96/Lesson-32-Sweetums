@@ -57,3 +57,7 @@ end
 get '/admin_test' do
 	erb :admin_test
 end
+
+post '/cart' do
+	erb :cart
+end
